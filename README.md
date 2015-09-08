@@ -37,5 +37,5 @@ Open up the newly generated workspace, RAC-Introduction.xcworkspace, and look at
 
 
 Running the app
-
+----------------------
 Please use ‘user’ as Username and ‘password’ as Password to proceed with Sign-in
