@@ -15,6 +15,7 @@
 		6D94C3B91B9ED1DF00E0A8D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D94C3B81B9ED1DF00E0A8D1 /* Images.xcassets */; };
 		6D94C3BC1B9ED1DF00E0A8D1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D94C3BA1B9ED1DF00E0A8D1 /* LaunchScreen.xib */; };
 		6D94C3C81B9ED1DF00E0A8D1 /* RAC_IntroductionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D94C3C71B9ED1DF00E0A8D1 /* RAC_IntroductionTests.m */; };
+		6D94C3D51B9EDA8700E0A8D1 /* DemoSignInService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D94C3D41B9EDA8700E0A8D1 /* DemoSignInService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		6D94C3C11B9ED1DF00E0A8D1 /* RAC-IntroductionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RAC-IntroductionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D94C3C61B9ED1DF00E0A8D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D94C3C71B9ED1DF00E0A8D1 /* RAC_IntroductionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAC_IntroductionTests.m; sourceTree = "<group>"; };
+		6D94C3D31B9EDA8700E0A8D1 /* DemoSignInService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoSignInService.h; sourceTree = "<group>"; };
+		6D94C3D41B9EDA8700E0A8D1 /* DemoSignInService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoSignInService.m; sourceTree = "<group>"; };
 		A91A2CCF2321E004D54B2B7B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,13 +99,11 @@
 		6D94C3AA1B9ED1DF00E0A8D1 /* RAC-Introduction */ = {
 			isa = PBXGroup;
 			children = (
+				6D94C3D21B9EDA4D00E0A8D1 /* Model */,
 				6D94C3AF1B9ED1DF00E0A8D1 /* AppDelegate.h */,
 				6D94C3B01B9ED1DF00E0A8D1 /* AppDelegate.m */,
-				6D94C3B21B9ED1DF00E0A8D1 /* ViewController.h */,
-				6D94C3B31B9ED1DF00E0A8D1 /* ViewController.m */,
-				6D94C3B51B9ED1DF00E0A8D1 /* Main.storyboard */,
+				6D94C3D11B9ED9C900E0A8D1 /* View */,
 				6D94C3B81B9ED1DF00E0A8D1 /* Images.xcassets */,
-				6D94C3BA1B9ED1DF00E0A8D1 /* LaunchScreen.xib */,
 				6D94C3AB1B9ED1DF00E0A8D1 /* Supporting Files */,
 			);
 			path = "RAC-Introduction";
@@ -132,6 +133,26 @@
 				6D94C3C61B9ED1DF00E0A8D1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6D94C3D11B9ED9C900E0A8D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D94C3B51B9ED1DF00E0A8D1 /* Main.storyboard */,
+				6D94C3B21B9ED1DF00E0A8D1 /* ViewController.h */,
+				6D94C3B31B9ED1DF00E0A8D1 /* ViewController.m */,
+				6D94C3BA1B9ED1DF00E0A8D1 /* LaunchScreen.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6D94C3D21B9EDA4D00E0A8D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D94C3D31B9EDA8700E0A8D1 /* DemoSignInService.h */,
+				6D94C3D41B9EDA8700E0A8D1 /* DemoSignInService.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		BF34995345896AF9B9038FE8 /* Pods */ = {
@@ -278,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D94C3D51B9EDA8700E0A8D1 /* DemoSignInService.m in Sources */,
 				6D94C3B41B9ED1DF00E0A8D1 /* ViewController.m in Sources */,
 				6D94C3B11B9ED1DF00E0A8D1 /* AppDelegate.m in Sources */,
 				6D94C3AE1B9ED1DF00E0A8D1 /* main.m in Sources */,
